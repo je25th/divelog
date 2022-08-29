@@ -1,0 +1,18 @@
+spring:
+  main:
+    banner-mode: off
+
+my.service:
+  enabled: false
+  remote-address: 192.168.0.1
+  security:
+    username: hello
+    password: 1010
+    roles:
+      - ADMIN
+      - USER
+    attrs:
+      has-write-authority: false
+      has-read-authority: true
+      has-delete-authority: false
+#  secret: "${random.value}" ## 무작위로 생성된 문자열

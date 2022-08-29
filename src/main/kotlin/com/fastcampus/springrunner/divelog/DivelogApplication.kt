@@ -7,5 +7,8 @@ import org.springframework.boot.runApplication
 class DivelogApplication
 
 fun main(args: Array<String>) {
+	args.forEach {
+		println("Argument: $it")
+	}
 	runApplication<DivelogApplication>(*args)
 }
